@@ -7,13 +7,13 @@ const products = [
 
 
 const getAllPropValues = function(arr, prop) {
-    const newArray = [];
+    const propValues = [];
     for (const element of arr) {
       if (element.hasOwnProperty(prop))
         newArray.push(element[prop]);
     }
 
-    return newArray;
+    return propValues;
 };
 
 console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроид', 'Захват']
